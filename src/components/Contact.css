@@ -1,0 +1,81 @@
+.contact {
+  padding: 6rem 2rem;
+  background: #fff;
+  color: #1a1a1a;
+  border-top: 1px solid #eee;
+}
+
+.contact .section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  background: transparent;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
+  font-size: 1rem;
+  border: none;
+}
+
+.contact-link:hover {
+  opacity: 0.6;
+  transform: none;
+  border: none;
+  background: transparent;
+}
+
+.contact-link:nth-child(even):hover {
+  opacity: 0.6;
+  background: transparent;
+  color: #1a1a1a;
+  border: none;
+}
+
+.contact-icon {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 1.5rem;
+  }
+  .contact-links {
+    align-items: flex-start;
+  }
+  .contact-link {
+    max-width: none;
+    justify-content: flex-start;
+  }
+}

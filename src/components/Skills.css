@@ -1,0 +1,58 @@
+.skills {
+  padding: 6rem 2rem;
+  background: #fff;
+}
+
+.skills .section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.skills-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: #333;
+}
+
+.skill-category-item {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+  font-size: 1rem;
+  padding-left: 0;
+  position: relative;
+  color: #333;
+}
+
+.skill-category-item::before {
+  display: none;
+}
+
+.skill-sub-list {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.35em;
+  margin-bottom: 0.5em;
+  border-left: 1px solid #ddd;
+}
+
+.skill-sub-list li {
+  margin-bottom: 0.25em;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 4rem 1.5rem;
+  }
+}

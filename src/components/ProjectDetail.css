@@ -1,0 +1,139 @@
+.project-detail {
+  padding: 6rem 2rem 4rem;
+  background: white;
+  min-height: 100vh;
+}
+
+.project-not-found {
+  padding: 6rem 2rem 4rem;
+  background: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  color: #37352f;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.project-detail-header {
+  margin-bottom: 3rem;
+}
+
+.project-detail-image-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-detail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-detail-info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-detail-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #37352f;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.project-detail-meta {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-detail-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-detail-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #37352f;
+  margin-bottom: 0;
+}
+
+.project-detail-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #37352f;
+  line-height: 1.6;
+}
+
+.project-detail-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #37352f;
+  letter-spacing: -0.01em;
+}
+
+.project-detail-content p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.project-detail-content ul {
+  margin: 1rem 0;
+  padding-left: 1.7em;
+}
+
+.project-detail-content li {
+  margin-bottom: 0.5rem;
+}
+
+.gallery-section {
+  margin-top: 3rem;
+}
+
+.gallery-section:first-of-type {
+  margin-top: 0;
+}
+
+.gallery-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #37352f;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 5rem 1.5rem 3rem;
+  }
+  
+  .project-detail-title {
+    font-size: 2rem;
+  }
+  
+  .project-detail-description {
+    font-size: 1rem;
+  }
+}
