@@ -12,11 +12,30 @@
   letter-spacing: 0.02em;
   color: #1a1a1a;
   margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.contact-headshot {
+  flex-shrink: 0;
+}
+
+.contact-headshot img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1a1a1a;
 }
 
 .contact-content {
+  flex: 1;
   max-width: 600px;
-  margin: 0 auto;
   text-align: left;
 }
 
@@ -71,11 +90,28 @@
   .contact {
     padding: 4rem 1.5rem;
   }
-  .contact-links {
-    align-items: flex-start;
+  
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
   }
+  
+  .contact-content {
+    text-align: center;
+  }
+  
+  .contact-headshot img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .contact-links {
+    align-items: center;
+  }
+  
   .contact-link {
-    max-width: none;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
