@@ -1,6 +1,6 @@
 import squidImage from '../assets/squid.jpg'
 import turtleImage from '../assets/turtle.jpg'
-import robotImage from '../assets/UR3e-BT.jpg'
+import robotImage from '../assets/UR3s-BT.jpg'
 import sunsetImage from '../assets/sunset in lagos.jpeg'
 import churchImage from '../assets/camino_church.jpg'
 import controlFeedback from '../assets/projects/autonomous submarine/control feedback diagram.png'
@@ -113,15 +113,55 @@ export const projects = [
     technologies: ['Robotics', 'Manipulation', 'Control Systems'],
     image: robotImage,
     content: `
-      <p>This robotic block manipulation project explores the complexities of robotic manipulation and precise control systems.</p>
-      <p>Working with industrial robotic arms, the project focuses on developing algorithms for accurate block handling, demonstrating the intersection of mechanical engineering, control theory, and computer vision.</p>
-      <h3>Key Features</h3>
-      <ul>
-        <li>Precise robotic manipulation</li>
-        <li>Forward and inverse kinematics</li>
-        <li>Computer vision integration</li>
-        <li>Real-time control systems</li>
-      </ul>
+      <h3>Project overview</h3>
+      <p>The goal of this project is the use the UR3e robot to move three AR-tagged blocks. The blocks are randomly placed in the workspace and a camera is mounted above. We use OpenCV to process the data from the camera in order to detect the position of the blocks in pixels. Afterwards, we apply a perspective transformation to obtain the X Y coordinates of each block with respect the the work bench. Then we move each block using an inverse kinematics algorithm to a defined end position.</p>
+
+      <div style="width:100%; max-width:880px; margin:1rem 0;">
+        <iframe width="100%" height="495" src="https://www.youtube.com/embed/FeuGLMtIbQ8" title="Robotic Block Manipulation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>The extra credit for this project was to stack the cubes in a tower!</p>
+
+      <div style="width:100%; max-width:880px; margin:1rem 0;">
+        <iframe width="100%" height="495" src="https://www.youtube.com/embed/VIw6KKVwOwM" title="Stacking Cubes in Tower" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <h3>Software Design</h3>
+      <p>Our software design split the challenge into two main components: processing the location of each block from the camera data and using the robot to move the blocks. The general process for each component is down below.</p>
+
+      <h4>processBlocks()</h4>
+      <ol>
+        <li>Identify Aruco Tags on each cube</li>
+        <li>Get the center of Aruco Tags</li>
+        <li>Convert center position from camera frame to table frame</li>
+        <li>For each center position of the cubes
+          <ol>
+            <li>Move the robot arm to home position</li>
+            <li>Convert center position of cube to millimeters</li>
+            <li>Set the z value to the block height and add a Yaw of 0</li>
+            <li>Move the block to desired end position using moveBlocks()</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>moveBlocks()</h4>
+      <ol>
+        <li>Get inverser kinematics angles (IK) for initial position of cubes</li>
+        <li>Move Robot with angles</li>
+        <li>Get IK for initial position</li>
+        <li>Move Robot with angles</li>
+        <li>Turn on Gripper</li>
+        <li>Move Robot to initial position 100 millimeters above 0</li>
+        <li>Get IK for final position 100 millimeters above 0</li>
+        <li>Move Robot with angles</li>
+        <li>Get IK for final position</li>
+        <li>Move Robot with angles</li>
+        <li>Turn off Gripper</li>
+        <li>Move Robot to final position 100 millimeters above 0</li>
+      </ol>
+
+      <h3>Team Members</h3>
+      <p>Olivia Adams, Richa Gupta, Terrence Pierce</p>
     `
   },
   {

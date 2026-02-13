@@ -30,10 +30,8 @@ function ProjectDetail() {
         <div className="container">
           <Link to="/" className="back-link">← Back to Projects</Link>
           
-          <div className="project-detail-header">
-            <div className="project-detail-image-container">
-              <img src={project.image} alt={project.title} className="project-detail-image" />
-            </div>
+          <div className="project-detail-header" style={{ backgroundImage: `url(${project.image})` }}>
+            <div className="project-detail-overlay"></div>
             <div className="project-detail-info">
               <h1 className="project-detail-title">{project.title}</h1>
               <div className="project-detail-meta">
