@@ -26,7 +26,7 @@ function ProjectDetail() {
   return (
     <>
       <Navigation />
-      <section className="project-detail">
+      <section className={`project-detail project-${project.slug}`}>
         <div className="container">
           <Link to="/" className="back-link">← Back to Projects</Link>
           
