@@ -16,6 +16,12 @@ function Skills() {
             <li className="skill-category-item">Control Systems</li>
             <li className="skill-category-item">Embedded Systems</li>
             <li className="skill-category-item">Socio-technical Systems</li>
+            <li className="skill-category-item">
+              Business Automation &amp; Quality Management
+              <ul className="skill-sub-list">
+                <li>Process automation, workflow design, QA practices and continuous improvement</li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>

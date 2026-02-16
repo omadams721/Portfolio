@@ -12,13 +12,15 @@
   letter-spacing: 0.02em;
   color: #1a1a1a;
   margin-bottom: 1.5rem;
-  text-align: left;
+  text-align: center;
 }
 
 .contact-wrapper {
   display: flex;
-  gap: 3rem;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
 }
 
 .contact-headshot {
@@ -26,8 +28,8 @@
 }
 
 .contact-headshot img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #1a1a1a;
@@ -35,8 +37,8 @@
 
 .contact-content {
   flex: 1;
-  max-width: 600px;
-  text-align: left;
+  max-width: 700px;
+  text-align: center;
 }
 
 .contact-description {
@@ -49,22 +51,34 @@
 .contact-links {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.social-row {
+  display: flex;
+  flex-direction: row;
   gap: 0.5rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-sep {
+  color: #666;
+  opacity: 0.8;
+  margin: 0 0.25rem;
 }
 
 .contact-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.25rem 0;
+  display: inline-block;
+  padding: 0.25rem 0.25rem;
   background: transparent;
   color: #1a1a1a;
   text-decoration: none;
   font-weight: 400;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
   font-size: 1rem;
-  border: none;
 }
 
 .contact-link:hover {
@@ -82,8 +96,7 @@
 }
 
 .contact-icon {
-  font-size: 1rem;
-  opacity: 0.7;
+  display: none;
 }
 
 @media (max-width: 768px) {

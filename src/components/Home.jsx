@@ -9,8 +9,8 @@ function Home() {
     <>
       <Hero />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
       <Contact />
     </>
   )
