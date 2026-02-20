@@ -8,7 +8,7 @@ import submarineMech from '../assets/projects/autonomous submarine/squid_mechani
 import finalReport from '../assets/projects/autonomous submarine/Final Report Documentation - Team S.Q.U.I.D..pdf'
 import turtleReport from '../assets/projects/turtlebot/ENAE450_Final_Report_Group_14.pdf'
 import turtleBotZoning from '../assets/projects/turtlebot/turtlebot_zoning.png'
-import { getGallerySortedByDate } from './galleryPhotos'
+import { gallerySections } from './galleryPhotos'
 import { artGallerySections } from './artPhotos'
 
 export const projects = [
@@ -172,17 +172,10 @@ export const projects = [
     year: '2020 - 2025',
     technologies: ['Photography', 'Visual Arts'],
     image: sunsetImage,
-    gallery: getGallerySortedByDate(),
+    gallerySections: gallerySections,
     content: `
-      <p>My photography work spans multiple years of exploration in visual storytelling and composition.</p>
-      <p>Through various projects, I've explored different techniques, lighting conditions, and subjects, developing a unique perspective on capturing moments and emotions through the lens.</p>
-      <h3>Focus Areas</h3>
-      <ul>
-        <li>Landscape and nature photography</li>
-        <li>Portrait photography</li>
-        <li>Street photography</li>
-        <li>Experimental techniques</li>
-      </ul>
+      <p> I use photography to document my life, each image intended to authentically capture the feeling of a moment.</p>
+      <p>These photos capture all the places I've been and the friends and family I've shared those places with. <p>
     `
   },
   {
@@ -195,15 +188,8 @@ export const projects = [
     image: churchImage,
     gallerySections: artGallerySections,
     content: `
-      <p>My art projects represent a diverse exploration of creative expression across multiple mediums and techniques.</p>
-      <p>From traditional drawing and painting to digital art and mixed media, these projects reflect my passion for creative expression and the intersection of art and technology.</p>
-      <h3>Mediums Explored</h3>
-      <ul>
-        <li>Traditional drawing and painting</li>
-        <li>Digital art</li>
-        <li>Mixed media</li>
-        <li>Installation art</li>
-      </ul>
+      <p>Here are some pieces that have been a creative outlet from my technical work. I love working in different mediums and harnessing the unique qualities each allows for.</p>
+      <p>I've been particularly drawn to painting places I've been to, as a way to extend the feeling of being there further than a photo allows.</p>
     `
   }
 ]

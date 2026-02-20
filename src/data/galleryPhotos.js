@@ -1,46 +1,94 @@
 /**
- * Gallery photos: set name (or caption/alt) for the label, and shotDate (YYYY-MM-DD) for sorting.
+ * Gallery photos organized by camera type: 35mm film (Canon AE-1) and digital (Fujifilm XT1).
  * Photos are sorted by shotDate (newest first). Label shown = name || caption || alt || date.
  */
 
-import img00 from '../assets/gallery/A forest overlook.JPEG'
-import img01 from '../assets/gallery/A vineyard beyond Zumaia.JPEG'
-import img02 from '../assets/gallery/Church ruin in the garden of Monserrate Palace .JPEG'
-import img03 from '../assets/gallery/Donkeys on the Camino.JPEG'
-import img04 from '../assets/gallery/In Black Water Falls State Park.JPEG'
-import img05 from '../assets/gallery/Kite flying at sunset at Assateague Island.JPEG'
-import img06 from '../assets/gallery/Looking over Zarautz at dusk.JPEG'
-import img07 from '../assets/gallery/Off the Red Creek in Dolly Sods.JPEG'
-import img08 from '../assets/gallery/On the camino to Izar Bide.JPEG'
-import img09 from '../assets/gallery/On the pier to La Concha beach in San Sebastian.JPEG'
-import img10 from '../assets/gallery/Overlooking the Basque Coast Geopark.JPEG'
-import img11 from '../assets/gallery/Ponta da Piedade in Lagos, Portugal.JPEG'
-import img12 from '../assets/gallery/Tiled fountain in the garden of Monserrate Palace.JPEG'
+// Film photos (35mm, Canon AE-1)
+import film01 from '../assets/gallery/film/Bonnie.jpg'
+import film02 from '../assets/gallery/film/Clouds Rest in Yosemite.JPG'
+import film03 from '../assets/gallery/film/Hoh rainforest.jpg'
+import film04 from '../assets/gallery/film/Hueco Tanks, Texas.jpg'
+import film05 from '../assets/gallery/film/In Shenandoah.jpg'
+import film06 from '../assets/gallery/film/Ithaca, NY.jpg'
+import film07 from '../assets/gallery/film/National Botanical Gardens.jpg'
+import film08 from '../assets/gallery/film/On the beach at Olympic NP.jpg'
+import film09 from '../assets/gallery/film/Sunrise from Cadillac Mountain.JPG'
+import film10 from '../assets/gallery/film/Sunset from Clouds Rest in Yosemite.JPG'
+import film11 from '../assets/gallery/film/Sunset from Smith Island, MD.jpg'
+import film12 from '../assets/gallery/film/Sunset in Acadia NP.JPG'
+import film13 from '../assets/gallery/film/View of half dome.JPG'
+import film14 from '../assets/gallery/film/Walking the canal in Georgetown.jpg'
+import film15 from '../assets/gallery/film/White Sands, New Mexico.jpg'
 
-export const galleryPhotos = [
-  { src: img00, shotDate: '2024-06-15', name: 'A forest overlook', alt: 'A forest overlook', caption: '' },
-  { src: img01, shotDate: '2024-06-01', name: 'A vineyard beyond Zumaia', alt: 'A vineyard beyond Zumaia', caption: '' },
-  { src: img02, shotDate: '2024-05-25', name: 'Church ruin in the garden of Monserrate Palace', alt: 'Church ruin in the garden of Monserrate Palace', caption: '' },
-  { src: img03, shotDate: '2024-04-15', name: 'Donkeys on the Camino', alt: 'Donkeys on the Camino', caption: '' },
-  { src: img04, shotDate: '2023-06-01', name: 'In Black Water Falls State Park', alt: 'In Black Water Falls State Park', caption: '' },
-  { src: img05, shotDate: '2023-08-10', name: 'Kite flying at sunset at Assateague Island', alt: 'Kite flying at sunset at Assateague Island', caption: '' },
-  { src: img06, shotDate: '2024-05-01', name: 'Looking over Zarautz at dusk', alt: 'Looking over Zarautz at dusk', caption: '' },
-  { src: img07, shotDate: '2023-08-15', name: 'Off the Red Creek in Dolly Sods', alt: 'Off the Red Creek in Dolly Sods', caption: '' },
-  { src: img08, shotDate: '2024-04-01', name: 'On the camino to Izar Bide', alt: 'On the camino to Izar Bide', caption: '' },
-  { src: img09, shotDate: '2024-05-15', name: 'On the pier to La Concha beach in San Sebastian', alt: 'On the pier to La Concha beach in San Sebastian', caption: '' },
-  { src: img10, shotDate: '2024-05-20', name: 'Overlooking the Basque Coast Geopark', alt: 'Overlooking the Basque Coast Geopark', caption: '' },
-  { src: img11, shotDate: '2024-03-01', name: 'Ponta da Piedade in Lagos, Portugal', alt: 'Ponta da Piedade in Lagos, Portugal', caption: '' },
-  { src: img12, shotDate: '2024-05-22', name: 'Tiled fountain in the garden of Monserrate Palace', alt: 'Tiled fountain in the garden of Monserrate Palace', caption: '' },
+// Digital photos (Fujifilm XT1)
+import digital01 from '../assets/gallery/digital/A forest overlook.JPEG'
+import digital02 from '../assets/gallery/digital/A vineyard beyond Zumaia.JPEG'
+import digital03 from '../assets/gallery/digital/Church ruin in the garden of Monserrate Palace .JPEG'
+import digital04 from '../assets/gallery/digital/Donkeys on the Camino.JPEG'
+import digital05 from '../assets/gallery/digital/Dusk after eating at Sabor de Nepal.JPEG'
+import digital06 from '../assets/gallery/digital/In Black Water Falls State Park.JPEG'
+import digital07 from '../assets/gallery/digital/In the church ruins.JPEG'
+import digital08 from '../assets/gallery/digital/Kite flying at sunset at Assateague Island.JPEG'
+import digital09 from '../assets/gallery/digital/Looking over Zarautz at dusk.JPEG'
+import digital10 from '../assets/gallery/digital/Off the Red Creek in Dolly Sods.JPEG'
+import digital11 from '../assets/gallery/digital/On the camino to Izar Bide.JPEG'
+import digital12 from '../assets/gallery/digital/On the pier to La Concha beach in San Sebastian.JPEG'
+import digital13 from '../assets/gallery/digital/Overlooking the Basque Coast Geopark.JPEG'
+import digital14 from '../assets/gallery/digital/Ponta da Piedade in Lagos, Portugal.JPEG'
+import digital15 from '../assets/gallery/digital/Sunset in Lisbon.JPEG'
+import digital16 from '../assets/gallery/digital/Tiled fountain in the garden of Monserrate Palace.JPEG'
+import digital17 from '../assets/gallery/digital/Two birds.JPEG'
+
+export const gallerySections = [
+  {
+    title: 'Digital (Fujifilm XT1)',
+    images: [
+      { src: digital01, name: 'A forest overlook', alt: 'A forest overlook', caption: '' },
+      { src: digital02, name: 'A vineyard beyond Zumaia', alt: 'A vineyard beyond Zumaia', caption: '' },
+      { src: digital03, name: 'Church ruin in the garden of Monserrate Palace', alt: 'Church ruin in the garden of Monserrate Palace', caption: '' },
+      { src: digital04, name: 'Donkeys on the Camino', alt: 'Donkeys on the Camino', caption: '' },
+      { src: digital05, name: 'Dusk after eating at Sabor de Nepal', alt: 'Dusk after eating at Sabor de Nepal', caption: '' },
+      { src: digital06, name: 'In Black Water Falls State Park', alt: 'In Black Water Falls State Park', caption: '' },
+      { src: digital07, name: 'In the church ruins', alt: 'In the church ruins', caption: '' },
+      { src: digital08, name: 'Kite flying at sunset at Assateague Island', alt: 'Kite flying at sunset at Assateague Island', caption: '' },
+      { src: digital09, name: 'Looking over Zarautz at dusk', alt: 'Looking over Zarautz at dusk', caption: '' },
+      { src: digital10, name: 'Off the Red Creek in Dolly Sods', alt: 'Off the Red Creek in Dolly Sods', caption: '' },
+      { src: digital11, name: 'On the camino to Izar Bide', alt: 'On the camino to Izar Bide', caption: '' },
+      { src: digital12, name: 'On the pier to La Concha beach in San Sebastian', alt: 'On the pier to La Concha beach in San Sebastian', caption: '' },
+      { src: digital13, name: 'Overlooking the Basque Coast Geopark', alt: 'Overlooking the Basque Coast Geopark', caption: '' },
+      { src: digital14, name: 'Ponta da Piedade in Lagos, Portugal', alt: 'Ponta da Piedade in Lagos, Portugal', caption: '' },
+      { src: digital15, name: 'Sunset in Lisbon', alt: 'Sunset in Lisbon', caption: '' },
+      { src: digital16, name: 'Tiled fountain in the garden of Monserrate Palace', alt: 'Tiled fountain in the garden of Monserrate Palace', caption: '' },
+      { src: digital17, name: 'Two birds', alt: 'Two birds', caption: '' },
+    ],
+  },
+  {
+    title: 'Film (35mm, Canon AE-1)',
+    images: [
+      { src: film01, name: 'Bonnie', alt: 'Bonnie', caption: '' },
+      { src: film02, name: 'Clouds Rest in Yosemite', alt: 'Clouds Rest in Yosemite', caption: '' },
+      { src: film03, name: 'Hoh rainforest', alt: 'Hoh rainforest', caption: '' },
+      { src: film04, name: 'Hueco Tanks, Texas', alt: 'Hueco Tanks, Texas', caption: '' },
+      { src: film05, name: 'In Shenandoah', alt: 'In Shenandoah', caption: '' },
+      { src: film06, name: 'Ithaca, NY', alt: 'Ithaca, NY', caption: '' },
+      { src: film07, name: 'National Botanical Gardens', alt: 'National Botanical Gardens', caption: '' },
+      { src: film08, name: 'On the beach at Olympic NP', alt: 'On the beach at Olympic NP', caption: '' },
+      { src: film09, name: 'Sunrise from Cadillac Mountain', alt: 'Sunrise from Cadillac Mountain', caption: '' },
+      { src: film10, name: 'Sunset from Clouds Rest in Yosemite', alt: 'Sunset from Clouds Rest in Yosemite', caption: '' },
+      { src: film11, name: 'Sunset from Smith Island, MD', alt: 'Sunset from Smith Island, MD', caption: '' },
+      { src: film12, name: 'Sunset in Acadia NP', alt: 'Sunset in Acadia NP', caption: '' },
+      { src: film13, name: 'View of half dome', alt: 'View of half dome', caption: '' },
+      { src: film14, name: 'Walking the canal in Georgetown', alt: 'Walking the canal in Georgetown', caption: '' },
+      { src: film15, name: 'White Sands, New Mexico', alt: 'White Sands, New Mexico', caption: '' },
+    ],
+  },
 ]
 
-/** Returns gallery photos sorted by shot date (newest first). */
-export function getGallerySortedByDate() {
-  return [...galleryPhotos].sort((a, b) => (b.shotDate > a.shotDate ? 1 : -1))
+/** Flat list of all gallery images (for projects that only support a single gallery). */
+export function getGalleryFlat() {
+  return gallerySections.flatMap((section) =>
+    section.images.map((img) => ({ ...img, category: section.title }))
+  )
 }
 
-/** Format shot date for display (e.g. "June 14, 2024"). */
-export function formatShotDate(isoDate) {
-  if (!isoDate) return ''
-  const d = new Date(isoDate + 'T12:00:00')
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
-}
+export const galleryPhotos = getGalleryFlat()

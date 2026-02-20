@@ -1,5 +1,5 @@
 import './Hero.css'
-import forestOverlook from '../assets/gallery/A forest overlook.JPEG'
+import forestOverlook from '../assets/gallery/digital/A forest overlook.JPEG'
 
 function Hero() {
   return (

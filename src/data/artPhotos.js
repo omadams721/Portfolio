@@ -13,12 +13,13 @@ import oil3 from '../assets/art/oil pastels/descent from halfdome.jpg'
 import oil4 from '../assets/art/oil pastels/on the camino to getaria.jpg'
 import oil5 from '../assets/art/oil pastels/tuolumne meadows.jpg'
 import watercolor1 from '../assets/art/watercolor/on the bank of redcreek.jpg'
+import watercolor2 from '../assets/art/watercolor/preparing for the lunar newyear.jpg'
+import watercolor3 from '../assets/art/watercolor/the view from my apartment.jpg'
 
 export const artGallerySections = [
   {
     title: 'Gouache',
     images: [
-      { src: gouache1, name: 'Bird with fruit', alt: 'Bird with fruit', caption: '' },
       { src: gouache2, name: 'Donkeys on the Camino', alt: 'Donkeys on the Camino', caption: '' },
       { src: gouache3, name: 'On the camino to Deba', alt: 'On the camino to Deba', caption: '' },
       { src: gouache4, name: 'Pine forest off of Red Creek', alt: 'Pine forest off of Red Creek', caption: '' },
@@ -27,17 +28,19 @@ export const artGallerySections = [
   {
     title: 'Oil pastels',
     images: [
-      { src: oil1, name: 'A bluejay', alt: 'A bluejay', caption: '' },
-      { src: oil2, name: 'Church ruin in Monserrate Palace', alt: 'Church ruin in Monserrate Palace', caption: '' },
       { src: oil3, name: 'Descent from Half Dome', alt: 'Descent from Half Dome', caption: '' },
       { src: oil4, name: 'On the camino to Getaria', alt: 'On the camino to Getaria', caption: '' },
       { src: oil5, name: 'Tuolumne Meadows', alt: 'Tuolumne Meadows', caption: '' },
+      { src: oil1, name: 'A bluejay', alt: 'A bluejay', caption: '' },
+      { src: oil2, name: 'Church ruin in Monserrate Palace', alt: 'Church ruin in Monserrate Palace', caption: '' },
     ],
   },
   {
     title: 'Watercolor',
     images: [
       { src: watercolor1, name: 'On the bank of Red Creek', alt: 'On the bank of Red Creek', caption: '' },
+      { src: watercolor2, name: 'Preparing for the Lunar New Year', alt: 'Preparing for the Lunar New Year', caption: '' },
+      { src: watercolor3, name: 'The view from my apartment', alt: 'The view from my apartment', caption: '' },
     ],
   },
 ]
