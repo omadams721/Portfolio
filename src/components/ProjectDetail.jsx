@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getProjectBySlug } from '../data/projects'
 import Navigation from './Navigation'
@@ -7,6 +8,7 @@ import './ProjectDetail.css'
 function ProjectDetail() {
   const { slug } = useParams()
   const project = getProjectBySlug(slug)
+  const [activeSection, setActiveSection] = useState(0)
 
   if (!project) {
     return (
@@ -54,12 +56,22 @@ function ProjectDetail() {
           {project.gallery && (
             <Gallery images={project.gallery} sortByDate={!!project.gallery[0]?.shotDate} />
           )}
-          {project.gallerySections?.map((section, i) => (
-            <div key={i} className="gallery-section">
-              <h3 className="gallery-section-title">{section.title}</h3>
-              <Gallery images={section.images} sortByDate={false} />
+          {project.gallerySections && (
+            <div className="gallery-section">
+              <div className="gallery-tabs">
+                {project.gallerySections.map((section, i) => (
+                  <button
+                    key={i}
+                    className={`gallery-tab${activeSection === i ? ' gallery-tab--active' : ''}`}
+                    onClick={() => setActiveSection(i)}
+                  >
+                    {section.title}
+                  </button>
+                ))}
+              </div>
+              <Gallery images={project.gallerySections[activeSection].images} sortByDate={false} />
             </div>
-          ))}
+          )}
         </div>
       </section>
     </>

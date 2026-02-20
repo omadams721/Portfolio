@@ -38,28 +38,79 @@ import digital14 from '../assets/gallery/digital/Ponta da Piedade in Lagos, Port
 import digital15 from '../assets/gallery/digital/Sunset in Lisbon.JPEG'
 import digital16 from '../assets/gallery/digital/Tiled fountain in the garden of Monserrate Palace.JPEG'
 import digital17 from '../assets/gallery/digital/Two birds.JPEG'
+import digital18 from '../assets/gallery/digital/A pasture in Mutriku.JPEG'
+import digital19 from '../assets/gallery/digital/A sneakpeak of the flysch at high tide.JPEG'
+import digital20 from '../assets/gallery/digital/Descending the mountain.JPEG'
+import digital21 from '../assets/gallery/digital/Going up to the sheep pasture.JPEG'
+import digital22 from '../assets/gallery/digital/Moments before family dinner with other pilgrims.JPEG'
+import digital23 from '../assets/gallery/digital/On the way to Deba.JPEG'
+import digital24 from '../assets/gallery/digital/Panorama on the Camino.JPEG'
+import digital25 from '../assets/gallery/digital/Pitstop at a vineyard.JPEG'
+import digital26 from '../assets/gallery/digital/Scaling the cliff for a better view of the beach.JPEG'
+import digital27 from '../assets/gallery/digital/Some cow friends.JPEG'
+import digital28 from '../assets/gallery/digital/The flysch.JPEG'
+import digital29 from '../assets/gallery/digital/The fog beyond the trees.JPEG'
+import digital30 from '../assets/gallery/digital/Through the tunnels between beaches.JPEG'
+import digital31 from '../assets/gallery/digital/After a dip in the river.JPEG'
+import digital32 from '../assets/gallery/digital/Backpacking through Madrid.JPEG'
+import digital33 from '../assets/gallery/digital/Cherry blossoms.JPEG'
+import digital34 from '../assets/gallery/digital/Kenilworth Aquatic Gardens.JPEG'
+import digital35 from '../assets/gallery/digital/Lazy Sunday.JPEG'
+import digital36 from '../assets/gallery/digital/Letchworth State Park.JPEG'
+import digital37 from '../assets/gallery/digital/Looking at the lotus.JPEG'
+import digital38 from '../assets/gallery/digital/On a dock in Pasaia.JPEG'
+import digital39 from '../assets/gallery/digital/On Red Creek.JPEG'
+import digital40 from '../assets/gallery/digital/Outer Banks.JPEG'
+import digital41 from '../assets/gallery/digital/Sunset at Dolly Sods.JPEG'
+import digital42 from '../assets/gallery/digital/Swimming in San Sebastian.JPEG'
 
 export const gallerySections = [
   {
     title: 'Digital (Fujifilm XT1)',
     images: [
+      { src: digital16, name: 'Tiled fountain in the garden of Monserrate Palace', alt: 'Tiled fountain in the garden of Monserrate Palace', caption: '' },
       { src: digital01, name: 'A forest overlook', alt: 'A forest overlook', caption: '' },
-      { src: digital02, name: 'A vineyard beyond Zumaia', alt: 'A vineyard beyond Zumaia', caption: '' },
       { src: digital03, name: 'Church ruin in the garden of Monserrate Palace', alt: 'Church ruin in the garden of Monserrate Palace', caption: '' },
-      { src: digital04, name: 'Donkeys on the Camino', alt: 'Donkeys on the Camino', caption: '' },
-      { src: digital05, name: 'Dusk after eating at Sabor de Nepal', alt: 'Dusk after eating at Sabor de Nepal', caption: '' },
-      { src: digital06, name: 'In Black Water Falls State Park', alt: 'In Black Water Falls State Park', caption: '' },
-      { src: digital07, name: 'In the church ruins', alt: 'In the church ruins', caption: '' },
-      { src: digital08, name: 'Kite flying at sunset at Assateague Island', alt: 'Kite flying at sunset at Assateague Island', caption: '' },
-      { src: digital09, name: 'Looking over Zarautz at dusk', alt: 'Looking over Zarautz at dusk', caption: '' },
-      { src: digital10, name: 'Off the Red Creek in Dolly Sods', alt: 'Off the Red Creek in Dolly Sods', caption: '' },
-      { src: digital11, name: 'On the camino to Izar Bide', alt: 'On the camino to Izar Bide', caption: '' },
-      { src: digital12, name: 'On the pier to La Concha beach in San Sebastian', alt: 'On the pier to La Concha beach in San Sebastian', caption: '' },
-      { src: digital13, name: 'Overlooking the Basque Coast Geopark', alt: 'Overlooking the Basque Coast Geopark', caption: '' },
       { src: digital14, name: 'Ponta da Piedade in Lagos, Portugal', alt: 'Ponta da Piedade in Lagos, Portugal', caption: '' },
       { src: digital15, name: 'Sunset in Lisbon', alt: 'Sunset in Lisbon', caption: '' },
-      { src: digital16, name: 'Tiled fountain in the garden of Monserrate Palace', alt: 'Tiled fountain in the garden of Monserrate Palace', caption: '' },
-      { src: digital17, name: 'Two birds', alt: 'Two birds', caption: '' },
+      { src: digital05, name: 'Dusk after eating at Sabor do Nepal', alt: 'Dusk after eating at Sabor do Nepal', caption: '' },
+      { src: digital02, name: 'A vineyard beyond Zumaia', alt: 'A vineyard beyond Zumaia', caption: '' },
+      
+      { src: digital09, name: 'Looking over Zarautz at dusk', alt: 'Looking over Zarautz at dusk', caption: '' },
+      { src: digital04, name: 'Donkeys on the Camino', alt: 'Donkeys on the Camino', caption: '' },
+      { src: digital30, name: 'Through the tunnels between beaches', alt: 'Through the tunnels between beaches', caption: '' },
+      { src: digital07, name: 'In the church ruins', alt: 'In the church ruins', caption: '' },
+      { src: digital13, name: 'Overlooking the Basque Coast Geopark', alt: 'Overlooking the Basque Coast Geopark', caption: '' },
+      { src: digital18, name: 'A pasture in Mutriku', alt: 'A pasture in Mutriku', caption: '' },
+      { src: digital20, name: 'Descending the mountain', alt: 'Descending the mountain', caption: '' },
+      { src: digital29, name: 'The fog beyond the trees', alt: 'The fog beyond the trees', caption: '' },
+      { src: digital27, name: 'Some cow friends', alt: 'Some cow friends', caption: '' },
+      
+      { src: digital19, name: 'A sneakpeak of the flysch at high tide', alt: 'A sneakpeak of the flysch at high tide', caption: '' },
+      { src: digital23, name: 'On the way to Deba', alt: 'On the way to Deba', caption: '' },
+      
+      
+      { src: digital26, name: 'Scaling the cliff for a better view of the beach', alt: 'Scaling the cliff for a better view of the beach', caption: '' },
+      { src: digital22, name: 'Moments before family dinner with other pilgrims', alt: 'Moments before family dinner with other pilgrims', caption: '' },
+      { src: digital28, name: 'The flysch', alt: 'The flysch', caption: '' },
+      { src: digital39, name: 'On Red Creek', alt: 'On Red Creek', caption: '' },
+      { src: digital40, name: 'Outer Banks', alt: 'Outer Banks', caption: '' },
+      { src: digital41, name: 'Sunset at Dolly Sods', alt: 'Sunset at Dolly Sods', caption: '' },
+      { src: digital42, name: 'Swimming in San Sebastian', alt: 'Swimming in San Sebastian', caption: '' },
+            
+      { src: digital06, name: 'In Black Water Falls State Park', alt: 'In Black Water Falls State Park', caption: '' },
+      { src: digital10, name: 'Off the Red Creek in Dolly Sods', alt: 'Off the Red Creek in Dolly Sods', caption: '' },
+      { src: digital08, name: 'Kite flying at sunset at Assateague Island', alt: 'Kite flying at sunset at Assateague Island', caption: '' },
+      { src: digital31, name: 'After a dip in the river', alt: 'After a dip in the river', caption: '' },
+      { src: digital32, name: 'Backpacking through Madrid', alt: 'Backpacking through Madrid', caption: '' },
+      { src: digital33, name: 'Cherry blossoms', alt: 'Cherry blossoms', caption: '' },
+      { src: digital34, name: 'Kenilworth Aquatic Gardens', alt: 'Kenilworth Aquatic Gardens', caption: '' },
+      { src: digital35, name: 'Lazy Sunday', alt: 'Lazy Sunday', caption: '' },
+      { src: digital36, name: 'Letchworth State Park', alt: 'Letchworth State Park', caption: '' },
+      { src: digital37, name: 'Looking at the lotus', alt: 'Looking at the lotus', caption: '' },
+      { src: digital38, name: 'On a dock in Pasaia', alt: 'On a dock in Pasaia', caption: '' },
+      
+     
     ],
   },
   {

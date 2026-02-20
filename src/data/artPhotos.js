@@ -15,16 +15,9 @@ import oil5 from '../assets/art/oil pastels/tuolumne meadows.jpg'
 import watercolor1 from '../assets/art/watercolor/on the bank of redcreek.jpg'
 import watercolor2 from '../assets/art/watercolor/preparing for the lunar newyear.jpg'
 import watercolor3 from '../assets/art/watercolor/the view from my apartment.jpg'
+import watercolor4 from '../assets/art/watercolor/The walk home after work at the Ahwahnee.jpg'
 
 export const artGallerySections = [
-  {
-    title: 'Gouache',
-    images: [
-      { src: gouache2, name: 'Donkeys on the Camino', alt: 'Donkeys on the Camino', caption: '' },
-      { src: gouache3, name: 'On the camino to Deba', alt: 'On the camino to Deba', caption: '' },
-      { src: gouache4, name: 'Pine forest off of Red Creek', alt: 'Pine forest off of Red Creek', caption: '' },
-    ],
-  },
   {
     title: 'Oil pastels',
     images: [
@@ -39,8 +32,18 @@ export const artGallerySections = [
     title: 'Watercolor',
     images: [
       { src: watercolor1, name: 'On the bank of Red Creek', alt: 'On the bank of Red Creek', caption: '' },
+      { src: watercolor4, name: 'The walk home after work at the Ahwahnee', alt: 'The walk home after work at the Ahwahnee', caption: '' },
       { src: watercolor2, name: 'Preparing for the Lunar New Year', alt: 'Preparing for the Lunar New Year', caption: '' },
       { src: watercolor3, name: 'The view from my apartment', alt: 'The view from my apartment', caption: '' },
+      
+    ],
+  },
+  {
+    title: 'Gouache',
+    images: [
+      { src: gouache2, name: 'Donkeys on the Camino', alt: 'Donkeys on the Camino', caption: '' },
+      { src: gouache3, name: 'On the camino to Deba', alt: 'On the camino to Deba', caption: '' },
+      { src: gouache4, name: 'Pine forest off of Red Creek', alt: 'Pine forest off of Red Creek', caption: '' },
     ],
   },
 ]

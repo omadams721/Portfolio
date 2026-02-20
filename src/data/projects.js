@@ -189,8 +189,8 @@ export const projects = [
     gallerySections: artGallerySections,
     content: `
       <p>Here are some pieces that have been a creative outlet from my technical work. I love working in different mediums and harnessing the unique qualities each allows for.</p>
-      <p>I've been particularly drawn to painting places I've been to, as a way to extend the feeling of being there further than a photo allows.</p>
-    `
+      <p>I've been particularly drawn to painting places I've been to, as a way to extend the feeling of being there further than a photo allows. But also as a moment of reflection to get to know the places more intimately.</p>
+     `
   }
 ]
 
