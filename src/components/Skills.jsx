@@ -1,3 +1,4 @@
+import wallee from '../assets/wallee.jpg'
 import './Skills.css'
 
 function Skills() {
@@ -5,6 +6,13 @@ function Skills() {
     <section id="skills" className="skills">
       <div className="container">
         <h2 className="section-title">Skills and Interest</h2>
+        <div className="skills-body">
+          <div className="skills-image-wrap">
+            <img src={wallee} alt="Wallee" className="skills-image" />
+            <p className="skills-image-credit">
+              Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Jason Leung</a> on <a href="https://unsplash.com/photos/yellow-and-gray-robot-toy-1DjbGRDh7-E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>
+            </p>
+          </div>
         <div className="skills-content">
           <ul className="skills-list">
             <li className="skill-category-item">
@@ -23,6 +31,7 @@ function Skills() {
               </ul>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </section>

@@ -3,6 +3,39 @@
   background: #fff;
 }
 
+.skills-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.skills-image-wrap {
+  width: 180px;
+  flex-shrink: 0;
+}
+.skills-image {
+
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.skills-image-credit {
+  margin: 0.35rem 0 0;
+  font-size: 0.7rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+.skills-image-credit a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.skills-image-credit a:hover {
+  text-decoration: underline;
+}
+
 .skills .section-title {
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.75rem;
@@ -13,8 +46,7 @@
 }
 
 .skills-content {
-  max-width: 600px;
-  margin: 0 auto;
+  flex: 1;
 }
 
 .skills-list {
@@ -54,5 +86,13 @@
 @media (max-width: 768px) {
   .skills {
     padding: 4rem 1.5rem;
+  }
+
+  .skills-body {
+    flex-direction: column;
+  }
+
+  .skills-image-wrap {
+    width: 100%;
   }
 }

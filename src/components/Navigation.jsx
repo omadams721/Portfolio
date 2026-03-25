@@ -44,7 +44,7 @@ function Navigation() {
   ]
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${location.pathname === '/' ? 'home' : ''}`}>
       <div className="nav-container">
         <Link to="/" className="nav-logo">Olivia Adams</Link>
         <button 

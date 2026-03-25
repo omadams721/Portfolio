@@ -34,9 +34,9 @@
 .hero-name {
   font-family: Georgia, 'Times New Roman', serif;
   font-size: clamp(3rem, 10vw, 5.5rem);
-  font-weight: 400;
+  font-weight: 550;
   letter-spacing: 0.02em;
-  color: #1a1a1a;
+  color: #240b0b;
   margin: 0 0 0.5rem;
   line-height: 1.1;
 }
@@ -46,7 +46,7 @@
   font-weight: 400;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #FFFDD0;
+  color: #dfe7d5;
   margin: 0 0 4rem;
 }
 
@@ -56,7 +56,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  border: 1px solid #ccc;
+  border: 3px solid #bed4ac;
   border-radius: 50%;
   text-decoration: none;
   color: transparent;
@@ -84,6 +84,7 @@
 @media (max-width: 768px) {
   .hero {
     padding: 4rem 1.5rem 2rem;
+    background-attachment: scroll;
   }
   .hero-tagline {
     margin-bottom: 3rem;
